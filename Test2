@@ -1,0 +1,73 @@
+Solution 1:-
+
+mystr=str(input("Enter a string : "))
+
+n=len(mystr);
+
+a=' '
+
+print("The Reverse of the given string is :" )
+
+for i in range(n-1,-1,-1):
+
+     a=a+mystr[i];
+
+print(a);
+
+Solution 2:-
+
+mystr=str(input("Enter Your string : "))
+
+y=[]
+
+h=' '
+
+ans=' '
+
+count=65
+
+while len(y)<len(mystr):
+
+       for i in mystr:
+
+            if ord(i)==count:
+
+                 y.append(i);
+
+       count+=1;
+
+ans=(', '.join(y))
+
+print("The Sorted output is : ",ans);
+
+Soltion 3:-
+
+n=int(input("Enter the no.of elements : "))
+
+myarr=[]
+
+st='+'
+
+ts='='
+
+ans=0
+
+for i in range(0,n):
+
+       ele=int(input("Enter the element : "))
+
+       myarr.append(ele);
+
+print(" Your Array is : ",myarr);
+
+op=int(input("Enter your ans : "))
+
+for i in range(0,n):
+
+     for j in range(1,n):
+
+          ans=myarr[i]+myarr[j];
+
+          if(ans==op):
+
+               print("The combination for your ans is " ,myarr[i] ,st ,myarr[j] ,ts ,ans);
