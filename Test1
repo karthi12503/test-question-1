@@ -1,0 +1,38 @@
+Solution 1:-
+n=int(input("Enter a number :"))
+if(n>0):
+     print("The Given number is positive");
+elif(n==0):
+     print("User have entered 0 as input");
+else :
+     print("The Given number is negative");
+
+Solution 2:-
+n=int(input("Enter the number of elements :"))
+a=0
+b=1
+s=0
+ans=1
+print("Your Fibannoci series is:");
+print("0");
+print("1");
+for i in range (2,n):
+     s=a+b
+     a=b
+     b=sum
+     print(s);
+     ans=ans+s
+print("The Sum of this series is",ans)
+
+Solution 3:-
+rows = int(input("Enter the Number of Rows  : "))
+columns = int(input("Enter the Number of Columns  : "))
+
+print("Your Hollow Rectangle Star Pattern is ; ") 
+for i in range(rows):
+    for j in range(columns):
+        if(i == 0 or i == rows - 1 or j == 0 or j == columns - 1):
+            print('*', end = '  ')
+        else:
+            print(' ', end = '  ')
+    print()
